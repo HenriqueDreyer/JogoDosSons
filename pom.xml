@@ -33,6 +33,6 @@
             <artifactId>hibernate-annotations</artifactId>
             <version>3.5.6-Final</version>
         </dependency>
-
     </dependencies>
+
 </project>
