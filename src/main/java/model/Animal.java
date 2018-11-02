@@ -1,12 +1,10 @@
 package model;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Arrays;
 
 @Entity
+@Table(name = "Animal")
 public class Animal {
     private short id;
     private String nome;
