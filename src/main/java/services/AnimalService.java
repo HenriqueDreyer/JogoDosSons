@@ -2,8 +2,8 @@ package services;
 
 import dao.HibernateUtil;
 import model.Animal;
+import org.hibernate.Query;
 import org.hibernate.Session;
-import org.hibernate.query.Query;
 
 import java.util.List;
 
@@ -17,5 +17,10 @@ public class AnimalService {
 
         //session.close();
         return query.list();
+    }
+
+    public static void add(Animal animal) {
+        Session session = HibernateUtil.getSession();
+        session.save(animal);
     }
 }
