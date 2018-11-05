@@ -21,14 +21,13 @@ public class MainController implements Initializable {
     ImageView balaoSom1;
 
     public void initialize(URL location, ResourceBundle resources) {
-        List<Animal> list = AnimalController.listarTodos();
+        List<Animal> list = AnimalController.random();
         Animal animal = list.get(0);
-        System.out.println(animal.getNome());
         SomService.playSom(animal);
-//        for(Animal a : list){
-//            System.out.println(a.getNome());
-//            SomService.play(a.getSom());
-//        }
+
+        for(Animal a : list){
+            System.out.println(a.getNome());
+        }
 
         balaoSom1.setOnMouseDragEntered(new EventHandler<MouseDragEvent>() {
             public void handle(MouseDragEvent event) {
