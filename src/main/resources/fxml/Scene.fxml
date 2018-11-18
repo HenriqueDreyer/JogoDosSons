@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,45 +21,76 @@
       <Ellipse fill="#19b5fe" layoutX="440.0" layoutY="158.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <Ellipse fill="#19b5fe" layoutX="730.0" layoutY="158.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <Ellipse fill="#19b5fe" layoutX="1020.0" layoutY="158.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <ImageView fx:id="balaoAnimal1" disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="89.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/cachorro.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoAnimal2" disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="369.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/porco.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoAnimal3" disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="662.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/peru.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoAnimal4" disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="952.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/vaca.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoSom1" fitHeight="112.0" fitWidth="100.0" layoutX="95.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/play.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoSom2" fitHeight="112.0" fitWidth="100.0" layoutX="390.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/play.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoSom3" fitHeight="112.0" fitWidth="100.0" layoutX="680.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/play.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="balaoSom4" fitHeight="112.0" fitWidth="100.0" layoutX="965.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/play.png" />
-         </image>
-      </ImageView>
+      <Button fx:id="buttonSom1" contentDisplay="GRAPHIC_ONLY" layoutX="86.0" layoutY="98.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom1">
+         <graphic>
+            <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/play.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="buttonSom2" contentDisplay="GRAPHIC_ONLY" layoutX="376.0" layoutY="98.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom2">
+         <graphic>
+            <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonSom3" contentDisplay="GRAPHIC_ONLY" layoutX="666.0" layoutY="98.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom3">
+         <graphic>
+            <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonSom4" contentDisplay="GRAPHIC_ONLY" layoutX="956.0" layoutY="98.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom4">
+         <graphic>
+            <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonAnimal1" contentDisplay="GRAPHIC_ONLY" layoutX="81.0" layoutY="273.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal1">
+         <graphic>
+            <ImageView fx:id="animal1Image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/cachorro.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonAnimal2" contentDisplay="GRAPHIC_ONLY" layoutX="369.0" layoutY="265.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal2">
+         <graphic>
+            <ImageView fx:id="animal2Image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/porco.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonAnimal3" contentDisplay="GRAPHIC_ONLY" layoutX="659.0" layoutY="265.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal3">
+         <graphic>
+            <ImageView fx:id="animal3Image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/peru.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonAnimal4" contentDisplay="GRAPHIC_ONLY" layoutX="941.0" layoutY="265.0" mnemonicParsing="false" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal4">
+         <graphic>
+            <ImageView fx:id="animal4Image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/vaca.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
