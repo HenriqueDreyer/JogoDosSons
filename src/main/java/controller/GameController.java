@@ -4,7 +4,6 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import model.Animal;
-import services.ResourceFile;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
