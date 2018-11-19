@@ -27,7 +27,8 @@ public class GameController {
         }
         return instance;
     }
-
+    
+    // TODO: Renomear classe => getAnimal()
     public Animal getRandomAnimal(){
         Random rand = new Random();
 
