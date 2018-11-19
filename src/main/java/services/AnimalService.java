@@ -12,7 +12,8 @@ import java.util.List;
 public class AnimalService {
 
     private AnimalService(){}
-
+    
+    // TODO: Verificar onde é usada e se pode ser excluida
     public static List<Animal> listar(){
         Session session = HibernateUtil.getSession();
         Query query = session.createQuery("from Animal ");
@@ -25,7 +26,8 @@ public class AnimalService {
         Session session = HibernateUtil.getSession();
         session.save(animal);
     }
-
+    
+    // TODO: Renomear classe
     public static List<Animal> radom(){
         Session session = HibernateUtil.getSession();
         Criteria criteria = session.createCriteria(Animal.class);
