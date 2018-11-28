@@ -3,18 +3,21 @@ package services;
 import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
 import model.Animal;
 
 import java.io.*;
 import java.util.Random;
 
 public class SomService {
+    private static MediaPlayer mediaPlayer;
 
     public static void playSom(Animal animal){
         Media media = null;
         try {
             media = new Media(getTempFile(animal.getSom(), animal.getNome()).toURI().toString());
-            MediaPlayer mediaPlayer = new MediaPlayer(media);
+            mediaPlayer = new MediaPlayer(media);
+            mediaPlayer.setStopTime(new Duration(2000));
             mediaPlayer.play();
 
         } catch (IOException e) {
