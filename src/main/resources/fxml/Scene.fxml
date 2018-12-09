@@ -12,14 +12,14 @@
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="1280.0" style="-fx-background-color: #e5f1ff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #e5f1ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
-      <ImageView fitHeight="774.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../imagens/asd.png" />
+            <Image url="@../imagens/fundo.png" />
          </image>
       </ImageView>
-      <Ellipse layoutX="215.0" layoutY="386.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="205.0" layoutY="350.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -33,21 +33,7 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Ellipse layoutX="204.0" layoutY="185.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
-         <fill>
-            <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
-               <stops>
-                  <Stop color="WHITE" />
-                  <Stop color="WHITE" offset="0.007662835249042145" />
-                  <Stop color="#30a3ff" offset="1.0" />
-               </stops>
-            </RadialGradient>
-         </fill>
-         <effect>
-            <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
-         </effect>
-      </Ellipse>
-      <Button fx:id="buttonSom1" contentDisplay="GRAPHIC_ONLY" layoutX="140.0" layoutY="115.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom1">
+      <Button fx:id="buttonSom1" contentDisplay="GRAPHIC_ONLY" layoutX="141.0" layoutY="280.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom1">
          <graphic>
             <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -56,7 +42,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Ellipse layoutX="494.0" layoutY="185.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="495.0" layoutY="350.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -70,7 +56,7 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Button fx:id="buttonSom2" contentDisplay="GRAPHIC_ONLY" layoutX="430.0" layoutY="115.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom2">
+      <Button fx:id="buttonSom2" contentDisplay="GRAPHIC_ONLY" layoutX="431.0" layoutY="280.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom2">
          <graphic>
             <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -79,7 +65,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Ellipse layoutX="784.0" layoutY="185.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="785.0" layoutY="350.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -93,7 +79,7 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Button fx:id="buttonSom3" contentDisplay="GRAPHIC_ONLY" layoutX="720.0" layoutY="115.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom3">
+      <Button fx:id="buttonSom3" contentDisplay="GRAPHIC_ONLY" layoutX="721.0" layoutY="280.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom3">
          <graphic>
             <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -102,7 +88,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Ellipse layoutX="1074.0" layoutY="185.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="1075.0" layoutY="350.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -116,7 +102,7 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Button fx:id="buttonSom4" contentDisplay="GRAPHIC_ONLY" layoutX="1013.0" layoutY="115.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom4">
+      <Button fx:id="buttonSom4" contentDisplay="GRAPHIC_ONLY" layoutX="1014.0" layoutY="280.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonSom4">
          <graphic>
             <ImageView fitHeight="112.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -125,7 +111,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Ellipse layoutX="494.0" layoutY="385.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="205.0" layoutY="550.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -139,12 +125,31 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Button id="2" fx:id="buttonAnimal2" contentDisplay="GRAPHIC_ONLY" layoutX="369.0" layoutY="309.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal2">
+      <Button id="1" fx:id="buttonAnimal1" contentDisplay="GRAPHIC_ONLY" layoutX="80.0" layoutY="474.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal1">
+         <graphic>
+            <ImageView fx:id="animal1Image" fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Ellipse layoutX="495.0" layoutY="550.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="0.007662835249042145" />
+                  <Stop color="#30a3ff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
+         </effect>
+      </Ellipse>
+      <Button id="2" fx:id="buttonAnimal2" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="474.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal2">
          <graphic>
             <ImageView fx:id="animal2Image" fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
          </graphic>
       </Button>
-      <Ellipse layoutX="784.0" layoutY="385.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="785.0" layoutY="550.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -158,12 +163,12 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Button id="3" fx:id="buttonAnimal3" contentDisplay="GRAPHIC_ONLY" layoutX="659.0" layoutY="309.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal3">
+      <Button id="3" fx:id="buttonAnimal3" contentDisplay="GRAPHIC_ONLY" layoutX="660.0" layoutY="474.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal3">
          <graphic>
             <ImageView fx:id="animal3Image" fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
          </graphic>
       </Button>
-      <Ellipse layoutX="1077.0" layoutY="385.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse layoutX="1078.0" layoutY="550.0" opacity="0.8" radiusX="125.0" radiusY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <fill>
             <RadialGradient centerX="0.7444444444444445" centerY="0.3523809523809524" focusAngle="-90.0" radius="0.6395348837209303">
                <stops>
@@ -177,12 +182,12 @@
             <DropShadow blurType="GAUSSIAN" color="#00000066" height="0.0" offsetX="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
       </Ellipse>
-      <Button id="4" fx:id="buttonAnimal4" contentDisplay="GRAPHIC_ONLY" layoutX="952.0" layoutY="309.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal4">
+      <Button id="4" fx:id="buttonAnimal4" contentDisplay="GRAPHIC_ONLY" layoutX="953.0" layoutY="474.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal4">
          <graphic>
             <ImageView fx:id="animal4Image" fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
          </graphic>
       </Button>
-      <Label fx:id="labelCorreto1" layoutX="95.0" layoutY="462.0" text="Correto!" visible="false">
+      <Label fx:id="labelCorreto1" layoutX="96.0" layoutY="627.0" text="Correto!" visible="false">
          <font>
             <Font name="Roboto Black" size="60.0" />
          </font>
@@ -199,7 +204,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label fx:id="labelCorreto2" layoutX="385.0" layoutY="462.0" text="Correto!" visible="false">
+      <Label fx:id="labelCorreto2" layoutX="386.0" layoutY="627.0" text="Correto!" visible="false">
          <font>
             <Font name="Roboto Black" size="60.0" />
          </font>
@@ -216,7 +221,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label fx:id="labelCorreto3" layoutX="675.0" layoutY="462.0" text="Correto!" visible="false">
+      <Label fx:id="labelCorreto3" layoutX="676.0" layoutY="627.0" text="Correto!" visible="false">
          <font>
             <Font name="Roboto Black" size="60.0" />
          </font>
@@ -233,7 +238,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label fx:id="labelCorreto4" layoutX="968.0" layoutY="462.0" text="Correto!" visible="false">
+      <Label fx:id="labelCorreto4" layoutX="969.0" layoutY="627.0" text="Correto!" visible="false">
          <font>
             <Font name="Roboto Black" size="60.0" />
          </font>
@@ -250,14 +255,18 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ImageView fx:id="telaVitoria" fitHeight="774.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fx:id="telaVitoria" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@../imagens/tela_vitoria.png" />
          </image>
       </ImageView>
-      <Button id="1" fx:id="buttonAnimal1" contentDisplay="GRAPHIC_ONLY" layoutX="79.0" layoutY="309.0" mnemonicParsing="false" prefHeight="142.0" prefWidth="250.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="ButtonAnimal1">
+      <Button id="start" fx:id="buttonIniciar" contentDisplay="GRAPHIC_ONLY" layoutX="-9.0" layoutY="-5.0" mnemonicParsing="false" onAction="#chamarJogo" prefHeight="730.0" prefWidth="1288.0" styleClass="buttonSons" stylesheets="@../styles/Styles.css" text="Iniciar">
          <graphic>
-            <ImageView fx:id="animal1Image" fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="telaInicial" fitHeight="743.0" fitWidth="1281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/tela_inicial.png" />
+               </image>
+            </ImageView>
          </graphic>
       </Button>
    </children>

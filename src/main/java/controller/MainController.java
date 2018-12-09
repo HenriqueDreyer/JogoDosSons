@@ -21,7 +21,7 @@ public class MainController implements Initializable {
 
     private Animal[] animalList;
     private Animal[] animalEmbaralhado;
-    
+
     private static Animal animal1;
     private static Animal animal2;
     private static Animal animal3;
@@ -29,21 +29,50 @@ public class MainController implements Initializable {
 
     private Animal animalSelecionado, somSelecionado;
     private int pontos = 0;
-    
-    @FXML Button buttonSom1;
-    @FXML Button buttonSom2;
-    @FXML Button buttonSom3;
-    @FXML Button buttonSom4;
-    @FXML Button buttonAnimal1;
-    @FXML Button buttonAnimal2;
-    @FXML Button buttonAnimal3;
-    @FXML Button buttonAnimal4;
-    @FXML ImageView animal1Image;
-    @FXML ImageView animal2Image;
-    @FXML ImageView animal3Image;
-    @FXML ImageView animal4Image;   
-    @FXML ImageView telaVitoria;
-    @FXML Label labelCorreto1, labelCorreto2, labelCorreto3, labelCorreto4;
+
+    @FXML
+    Button buttonSom1;
+    @FXML
+    Button buttonSom2;
+    @FXML
+    Button buttonSom3;
+    @FXML
+    Button buttonSom4;
+    @FXML
+    Button buttonAnimal1;
+    @FXML
+    Button buttonAnimal2;
+    @FXML
+    Button buttonAnimal3;
+    @FXML
+    Button buttonAnimal4;    
+    @FXML
+    ImageView animal1Image;
+    @FXML
+    ImageView animal2Image;
+    @FXML
+    ImageView animal3Image;
+    @FXML
+    ImageView animal4Image;
+    @FXML
+    ImageView telaVitoria;
+    @FXML
+    Label labelCorreto1, labelCorreto2, labelCorreto3, labelCorreto4;
+
+    // Adicionado 29/11/2018
+    @FXML
+    Button buttonIniciar;    
+    @FXML
+    ImageView telaInicial;
+    @FXML    
+    void chamarJogo(ActionEvent event) {
+        if (buttonIniciar.getId().equals("start"))
+        {
+            telaInicial.setVisible(false);
+            buttonIniciar.setDisable(true);
+        }
+    }
+    // Fim Adicionado
     
     public void initialize(URL location, ResourceBundle resources) {
         gameController = GameController.getInstance();
@@ -62,11 +91,11 @@ public class MainController implements Initializable {
         tocarSom(buttonSom2, animalEmbaralhado[1]);
         tocarSom(buttonSom3, animalEmbaralhado[2]);
         tocarSom(buttonSom4, animalEmbaralhado[3]);
-        
+
         escolherAnimal(buttonAnimal1, animal1);
         escolherAnimal(buttonAnimal2, animal2);
         escolherAnimal(buttonAnimal3, animal3);
-        escolherAnimal(buttonAnimal4, animal4);
+        escolherAnimal(buttonAnimal4, animal4);           
     }
 
     private void carregarAnimais() {
@@ -82,10 +111,10 @@ public class MainController implements Initializable {
         animalList[0] = animal1;
         animalList[1] = animal2;
         animalList[2] = animal3;
-        animalList[3] = animal4;
+        animalList[3] = animal4;        
     }
 
-    private void embaralhar() {        
+    private void embaralhar() {
         int posicao;
         Random gerador = new Random();
 
@@ -94,59 +123,56 @@ public class MainController implements Initializable {
                 posicao = gerador.nextInt(4);
             } while (animalEmbaralhado[posicao] != null);
             animalEmbaralhado[posicao] = animalL;
-        }
+        }        
     }
 
     public void tocarSom(final Button btn, final Animal animal) {
         btn.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
                 SomService.playSom(animal);
-                somSelecionado = animal;                
+                somSelecionado = animal;
             }
-        });
+        });        
     }
-    
-    private void escolherAnimal(final Button btn, final Animal animal) {
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                animalSelecionado = animal;
 
-                if (pontos == 3)
-                    telaVitoria.setVisible(true);
+    private void escolherAnimal(final Button btn, final Animal animal) {                
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent event) {     
+                
+                animalSelecionado = animal;                
+                                
+                if (pontos == 3) 
+                    telaVitoria.setVisible(true);                
 
                 if ((somSelecionado != null) && (animalSelecionado.getNome().equals(somSelecionado.getNome()))) {
                     if (btn.getId().equals("1")) {
                         labelCorreto1.setVisible(true);
                         animal1Image.setBlendMode(BlendMode.LIGHTEN);
                         buttonAnimal1.setDisable(true);
-                        buttonAnimal1.setBlendMode(BlendMode.LIGHTEN);
-                        pontos+=1;
+                        pontos += 1;
                     }
                     if (btn.getId().equals("2")) {
                         labelCorreto2.setVisible(true);
                         animal2Image.setBlendMode(BlendMode.LIGHTEN);
                         buttonAnimal2.setDisable(true);
-                        buttonAnimal2.setBlendMode(BlendMode.LIGHTEN);
-                        pontos+=1;
+                        pontos += 1;
                     }
                     if (btn.getId().equals("3")) {
                         labelCorreto3.setVisible(true);
                         animal3Image.setBlendMode(BlendMode.LIGHTEN);
                         buttonAnimal3.setDisable(true);
-                        buttonAnimal3.setBlendMode(BlendMode.LIGHTEN);
-                        pontos+=1;
+                        pontos += 1;
                     }
                     if (btn.getId().equals("4")) {
                         labelCorreto4.setVisible(true);
                         animal4Image.setBlendMode(BlendMode.LIGHTEN);
                         buttonAnimal4.setDisable(true);
-                        buttonAnimal4.setBlendMode(BlendMode.LIGHTEN);
-                        pontos+=1;
+                        pontos += 1;
                     }
                 } else {
                     somSelecionado = null;
-                }
-            }
+                }        
+            }            
         });
     }
 }
